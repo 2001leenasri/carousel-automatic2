@@ -1,0 +1,61 @@
+
+  body,html{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   box-sizing:border-box;
+   }
+.container{
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   position: relative;
+   background-image: url(images/Mercury.jpg);
+   background-repeat: no-repeat;
+   background-size:cover;
+   text-align: center;
+   justify-content: center;
+   animation-name: change;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   
+}
+.content{
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translate(-50%,50%); 
+   text-transform: uppercase;
+}
+.content h1{
+   font-size: 50px;
+   letter-spacing: 5px;
+   color:white;
+}
+@keyframes change{
+   0%{
+      background-image: url(images/Mercury.jpg);
+   }
+   15%{
+      background-image: url(images/Venus.jpg);
+   }
+   30%{
+      background-image: url(images/Earth.jpg);
+   }
+   45%{
+      background-image: url(images/mars.jpg);
+   }
+   60%{
+      background-image: url(images/jupiter.jpg);
+   }
+   75%{
+      background-image: url(images/saturn.jpg);
+   }
+   85%{
+      background-image: url(images/Uranus.jpg);
+   }
+   100%{
+      background-image: url(images/neptune.webp);
+   }
+}
